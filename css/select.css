@@ -1,0 +1,27 @@
+.select3{
+		background-color: #f4f3ef;
+		border: medium none;
+		border-radius: 4px;
+		color: #66615b;
+		font-size: 14px;
+		transition: background-color 0.3s ease 0s;
+		padding: 7px 18px;
+		height: 40px;
+
+		-webkit-box-shadow: none;
+		box-shadow: none;
+}
+
+.select4{
+		background-color: #ffffff;
+		border: medium none;
+		border-radius: 4px;
+		color: #66615b;
+		font-size: 14px;
+		transition: background-color 0.3s ease 0s;
+		padding: 7px 18px;
+		height: 40px;
+
+		-webkit-box-shadow: none;
+		box-shadow: none;
+}

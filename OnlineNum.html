@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title></title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Animation library for notifications   -->
+    <link href="./css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="./css/paper-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="./css/demo.css" rel="stylesheet" />
+	<link href="./css/select.css" rel="stylesheet"/>
+    <!--  Fonts and icons     -->
+    <link href="./css/themify-icons.css" rel="stylesheet">
+	<script language="JavaScript" src="././js/jquery-2.1.1.min.js"></script>
+	<script language="JavaScript" src="././js/math.js"></script>
+	<script language="JavaScript" src="././js/onlinenum.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+	
+	
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="main-panel">
+        <div class="content">
+            <div class="container-fluid">
+				 <div class="row" style = "padding-top : 10px">
+					<div class="col-md-12">
+						<div class="form-group" style = "padding-left : 0px">
+							<select class="select3" id="timevar">
+								<option>最近7天</option>
+								<option>最近15天</option>
+								<option>最近1个月</option>
+								<option>最近3个月</option>
+							</select>
+							<select class="select3" id="usertype">
+								<option>游客</option>
+								<option>非游客</option>
+							</select>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+						<!--
+                            <div class="header">
+                                <h4 class="title">表格</h4>
+                                <p class="category">这个下面的子标题</p>
+                            </div>
+						-->
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>ID</th>
+                                    	<th>ACTION_DATE</th>
+                                    	<th>JD_NUM</th>
+                                    	<th>YG_NUM</th>
+                                    	<th>TT_NUM</th>
+										<th>DXGJS_NUM</th>
+                                    </thead>
+                                    <tbody id="onlinedetail">
+                                    </tbody>
+                                </table>
+
+                            </div>
+							 
+                        </div>
+						<div id="example"></div>
+                    </div>
+					
+					 <script type='text/javascript'>
+        var options = {
+            currentPage: 3,
+            totalPages: 100
+        }
+
+        $('#example').bootstrapPaginator(options);
+		
+		var totalCount = 978;
+		var singlePageCount = 20;
+		
+		var realCount = 367;
+		
+		var page = totalCount / singlePageCount;
+		
+		if(totalCount % singlePageCount != 0){
+			page+=1;
+		}
+    </script>
+                </div>
+				
+		   </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                Creative Tim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.mycodes.net">
+                               Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/license">
+                                Licenses
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+				<div class="copyright pull-right">
+                    Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://www.mycodes.net/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="./js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="./js/bootstrap-checkbox-radio.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="./js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="./js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <!---<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>--->
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="./js/paper-dashboard.js"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="./js/demo.js"></script>
+
+
+</html>
